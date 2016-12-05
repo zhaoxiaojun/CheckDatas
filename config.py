@@ -3,6 +3,7 @@ import ConfigParser
 import os
 import codecs
 
+
 class ConfigIni(object):
     """
     配置类
@@ -30,8 +31,19 @@ class ConfigIni(object):
         """
         return cls.config.get("DEFAULT","gid")
 
+    @classmethod
+    def get_dbinfo(cls):
+        """
+        获取数据库信息
+        """
+        return cls.config.get("DEFAULT", "dbinfo")
+
+    @classmethod
+    def get_QueryDict(cls):
+        """
+        获取数据库信息
+        """
+        return cls.config.get("Group", "QueryDict")
 
 
-if __name__ == "__main__":
-    a = ConfigIni.get_Cid()
-    
+

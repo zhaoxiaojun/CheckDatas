@@ -29,7 +29,7 @@ csv_file = open('yxdatas.csv','wb')
 csv_writer = csv.writer(csv_file,delimiter=',')
 
 # 处理数据进行拼接
-Collegeurl = 'http://172.16.7.51:81/clpnew/index?cengci=b&cid={cid}&mid=#anchor'
+Collegeurl = 'http://www.233.mistong.com/clpnew/index?cengci=b&cid={cid}&mid=#anchor'
 
 cid = eval(config.ConfigIni.get_Cid())
 for i in xrange(len(cid)):
